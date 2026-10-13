@@ -1,0 +1,66 @@
+# NAME: Anthropic Full
+# BASE AUTHOR: blackmatrix7
+# BASE REPO: https://github.com/blackmatrix7/ios_rule_script
+# CHECKED: 2026-10-13
+# FORMAT: Quantumult X
+# HOST: 19
+# HOST-SUFFIX: 9
+# TOTAL: 28
+# Includes dedicated domains and shared third-party dependencies.
+# Shared hosts also route unrelated traffic through the Anthropic policy.
+# Replace Anthropic with your actual policy name if necessary.
+# Community-only entries are marked below; optional telemetry stays commented.
+# Sources and limits: Anthropic-review.md.
+
+# Original rules retained
+HOST,servd-anthropic-website.b-cdn.net,Anthropic
+HOST-SUFFIX,anthropic.com,Anthropic
+HOST-SUFFIX,claude.ai,Anthropic
+
+# Official network documentation: web, authentication, desktop preview,
+# Artifacts / Chrome bridge, and MCP interactive content.
+HOST-SUFFIX,claude.com,Anthropic
+HOST-SUFFIX,claude.app,Anthropic
+HOST-SUFFIX,claudeusercontent.com,Anthropic
+HOST-SUFFIX,claudemcpcontent.com,Anthropic
+
+# Developer blog linked from the official Claude homepage
+HOST-SUFFIX,claude.dev,Anthropic
+
+# Community-maintained Anthropic entries (v2fly domain-list-community).
+# These two are not listed in the official network documentation checked.
+# First-party ownership / endpoint use was not independently verified.
+HOST-SUFFIX,clau.de,Anthropic
+HOST-SUFFIX,claudemcpclient.com,Anthropic
+
+# Shared dependencies (included in this full version)
+# Artifacts: official network documentation lists these fonts / library hosts.
+HOST,fonts.googleapis.com,Anthropic
+HOST,fonts.gstatic.com,Anthropic
+HOST,cdnjs.cloudflare.com,Anthropic
+HOST,cdn.jsdelivr.net,Anthropic
+HOST,cdn.tailwindcss.com,Anthropic
+HOST,code.jquery.com,Anthropic
+HOST,unpkg.com,Anthropic
+
+# Help center: resources / configuration observed in its official HTML.
+HOST,static.intercomassets.com,Anthropic
+HOST,downloads.intercomcdn.com,Anthropic
+HOST,widget.intercom.io,Anthropic
+HOST,api-iam.intercom.io,Anthropic
+
+# Corporate homepage: script / stylesheet resources observed in official HTML.
+HOST,cdn.prod.website-files.com,Anthropic
+HOST,d3e54v103j8qbb.cloudfront.net,Anthropic
+
+# Claude Code: conditional installation, plugin, changelog and update hosts.
+# storage.googleapis.com is also used for plugin metadata; old installers use it.
+HOST,storage.googleapis.com,Anthropic
+HOST,registry.npmjs.org,Anthropic
+HOST,github.com,Anthropic
+HOST,raw.githubusercontent.com,Anthropic
+HOST,formulae.brew.sh,Anthropic
+
+# Optional Claude Code telemetry: disabled here; uncomment only if wanted.
+# HOST,http-intake.logs.us5.datadoghq.com,Anthropic
+# HOST,browser-intake-us5-datadoghq.com,Anthropic

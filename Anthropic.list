@@ -1,0 +1,30 @@
+# NAME: Anthropic (supplemented)
+# BASE AUTHOR: blackmatrix7
+# CHECKED: 2026-10-13
+# FORMAT: Quantumult X
+# HOST: 1
+# HOST-SUFFIX: 9
+# TOTAL: 10
+# Replace Anthropic with your existing policy name if necessary.
+# Sources and evidence levels: see Anthropic-review.md.
+
+# Original rules retained
+HOST,servd-anthropic-website.b-cdn.net,Anthropic
+HOST-SUFFIX,anthropic.com,Anthropic
+HOST-SUFFIX,claude.ai,Anthropic
+
+# Official network documentation: web, authentication, desktop preview,
+# Artifacts / Chrome bridge, and MCP interactive content.
+HOST-SUFFIX,claude.com,Anthropic
+HOST-SUFFIX,claude.app,Anthropic
+HOST-SUFFIX,claudeusercontent.com,Anthropic
+HOST-SUFFIX,claudemcpcontent.com,Anthropic
+
+# Developer blog linked from the official Claude homepage
+HOST-SUFFIX,claude.dev,Anthropic
+
+# Community-maintained Anthropic entries (v2fly domain-list-community).
+# These two are not listed in the official network documentation checked.
+# First-party ownership / endpoint use was not independently verified.
+HOST-SUFFIX,clau.de,Anthropic
+HOST-SUFFIX,claudemcpclient.com,Anthropic
